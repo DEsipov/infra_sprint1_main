@@ -9,8 +9,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'abracadabra')
 
+# Боевое режим.
 DEBUG = os.getenv('DEBUG', False)
-
+# С каких хостов можно получать запросы. * - с любых
 ALLOWED_HOSTS = ['*', '127.0.0.1', 'localhost']
 
 INSTALLED_APPS = [
@@ -93,10 +94,10 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+# Как будет выглядть url для статики.
 STATIC_URL = '/static_backend/'
+# Куда будет собираться вся статика.
 STATIC_ROOT = BASE_DIR / 'static_backend'
-
 # Какой будет формироваться адрес в ссылках на картинку.
 MEDIA_URL = '/media/'
 # Папка, куда будут сохраняться картинки котиков.
