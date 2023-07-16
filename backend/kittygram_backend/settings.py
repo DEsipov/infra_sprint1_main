@@ -12,7 +12,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'abracadabra')
 # Боевое режим.
 DEBUG = os.getenv('DEBUG', False)
 # С каких хостов можно получать запросы. * - с любых
-ALLOWED_HOSTS = ['*', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*', 'kittygramm23vi.ddns.net', '127.0.0.1', 'localhost']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
