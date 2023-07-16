@@ -2,8 +2,8 @@
 Description=gunicorn kittygram daemon
 After=network.target
 [Service]
-User=yc-user
-WorkingDirectory=/home/yc-user/infra_sprint1/backend/
-ExecStart=/home/yc-user/infra_sprint1/venv/bin/gunicorn --bind 0:8080 kittygram_backend.wsgi
+User=virgo
+WorkingDirectory=/home/virgo/infra_sprint1_main/backend
+ExecStart=/home/virgo/infra_sprint1_main/venv/bin/gunicorn --bind 0:8080 kittygram_backend.wsgi
 [Install]
 WantedBy=multi-user.target

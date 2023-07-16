@@ -2,20 +2,20 @@
 server {
     listen 80;
     # С любого адреса, лишь бы порт 80 был.
-    server_name _;
+    server_name kittygramm23vi.ddns.net;
 
     # любой другой запрос передай серверу Gunicorn
     location /api/ {
         include proxy_params;
-        # передавать запросы нужно на внутренний IP на порт 8000
-        proxy_pass http://127.0.0.1:8000;
+        # передавать запросы нужно на внутренний IP на порт 8080
+        proxy_pass http://127.0.0.1:8080;
     }
 
     # любой другой запрос передай серверу Gunicorn
     location /admin/ {
         include proxy_params;
-        # передавать запросы нужно на внутренний IP на порт 8000
-        proxy_pass http://127.0.0.1:8000;
+        # передавать запросы нужно на внутренний IP на порт 8080
+        proxy_pass http://127.0.0.1:8080;
     }
 
     location /media/ {
