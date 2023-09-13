@@ -1,5 +1,5 @@
 IP: 158.160.0.203;
-name_taski: https://taski.servehalflife.com;
-name_kittygram: https://kittygram.serveblog.net;
+name_taski: ya.ru;
+name_kittygram: ya.ru;
 login: yc-user;
 password: Z3A!L3wAFKhvvaN;
